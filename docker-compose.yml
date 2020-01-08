@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  chrony:
+    build: .
+    image: lnlscon/ntp:v1.0
+    container_name: chrony
+    restart: always
+    ports:
+      - 123:123/udp
+
