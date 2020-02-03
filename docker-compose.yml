@@ -7,4 +7,6 @@ services:
     restart: always
     ports:
       - 123:123/udp
+    deploy:
+      mode: global
 
